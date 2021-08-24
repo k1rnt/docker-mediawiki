@@ -1,0 +1,7 @@
+LocalSettings.php
+
+.env
+
+.DS_Store
+.idea
+!gitkeep
