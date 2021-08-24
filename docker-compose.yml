@@ -22,7 +22,7 @@ services:
       # After initial setup, download LocalSettings.php to the same directory as
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
-      - ./mediawiki/LocalSettings.php:/var/www/html/LocalSettings.php
+    #   - ./mediawiki/LocalSettings.php:/var/www/html/LocalSettings.php
 
   db:
     image: mariadb:latest
