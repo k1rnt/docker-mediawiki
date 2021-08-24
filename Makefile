@@ -14,6 +14,12 @@ restart:
 	@make up
 destroy:
 	docker-compose down --rmi all --volumes --remove-orphans
+	rm -rf ./mediawiki/skins/Timeless
+	rm -rf ./mediawiki/skins/Tweeki
+	rm -rf ./mediawiki/extensions/VisualEditor
+	rm -rf ./mediawiki/extensions/Elastica
+	rm -rf ./mediawiki/extensions/CirrusSearch
+
 destroy-volumes:
 	docker-compose down --volumes --remove-orphans
 ps:
